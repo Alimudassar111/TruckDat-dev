@@ -1,0 +1,15 @@
+<ul class="unstyled">
+    <li class="well span6" ng-repeat="(contactId, contact) in contacts">
+  <contact-widget contact="contact"></contact-widget>
+          <a class="btn btn-primary" ng-href="#/edit/{{$index}}">Edit</a>
+        <a class="btn btn-primary" ng-href="#/order/{{contactId}}">Bid to Quote</a>
+        <a class="btn btn-success" ng-href="#/quotes/{{contactId}}">Quoted Bids</a>
+    <a class="btn btn-success" ng-href="#/detaile/{{$index}}">Delivery Detail</a>
+    </li>
+</ul>
+
+
+
+
+
+
